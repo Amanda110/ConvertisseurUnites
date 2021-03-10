@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="305.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConvertisseurController">
+   <children>
+      <TabPane prefHeight="293.0" prefWidth="411.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Accueil">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="402.0" layoutY="231.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <Text layoutX="60.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur d'unités">
+                           <font>
+                              <Font name="System Bold" size="37.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="70.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue au Convertisseur d'unités. Ce programme vous permet de convertir entre les différentes unités impériales et métriques" textAlignment="CENTER" wrappingWidth="324.41259765625">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Longueurs">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="277.0" prefWidth="431.0">
+                     <children>
+                        <Button layoutX="402.0" layoutY="231.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <TextField fx:id="txtL1" layoutX="50.0" layoutY="95.0" onKeyReleased="#calculerL1" />
+                        <TextField fx:id="txtL2" layoutX="261.0" layoutY="95.0" onKeyReleased="#calculerL2" />
+                        <ComboBox fx:id="cboL1" layoutX="50.0" layoutY="126.0" onAction="#calculerL1" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboL2" layoutX="261.0" layoutY="126.0" onAction="#calculerL2" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Masses">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="277.0" prefWidth="431.0">
+                     <children>
+                        <Button layoutX="402.0" layoutY="231.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <TextField fx:id="txtMa1" layoutX="50.0" layoutY="95.0" onKeyReleased="#calculerMa1" />
+                        <TextField fx:id="txtMa2" layoutX="261.0" layoutY="95.0" onKeyReleased="#calculerMa2" />
+                        <ComboBox fx:id="cboMa1" layoutX="50.0" layoutY="126.0" onAction="#calculerMa1" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboMa2" layoutX="261.0" layoutY="126.0" onAction="#calculerMa2" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Volumes">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="277.0" prefWidth="431.0">
+                     <children>
+                        <Button layoutX="402.0" layoutY="231.0" mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+                        <TextField fx:id="txtVol1" layoutX="50.0" layoutY="95.0" onKeyReleased="#calculerVol1" />
+                        <TextField fx:id="txtVol2" layoutX="261.0" layoutY="95.0" onKeyReleased="#calculerVol2" />
+                        <ComboBox fx:id="cboVol1" layoutX="50.0" layoutY="126.0" onAction="#calculerVol1" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboVol2" layoutX="261.0" layoutY="126.0" onAction="#calculerVol2" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
