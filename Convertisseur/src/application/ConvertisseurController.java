@@ -158,7 +158,7 @@ public class ConvertisseurController implements Initializable {
     	});
     }
     
- /* Methode permettant de fermer la fenètre quand on appui sur le bouton "Quitter". 
+ /* Methode permettant de fermer l'application quand on appui sur le bouton "Quitter". 
     Affiche une alerte pour verifier cette décision */
     @FXML
     void quitter()
